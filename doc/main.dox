@@ -1,0 +1,31 @@
+/**
+* @mainpage
+* @{
+* This project began by helping a relative with setting-up a Hunda Tech I2C touchscreen. He had difficulties understanding the workins of provided library. With my own attempt to understand the library i've documented it fully (some parts not but they aren't required to use it). Also i've added some examples(in progress). Hopefully some of you out there can make good use of the work i've done.
+* 
+* 
+* The documentation is setup in three parts.
+* - @link setup Setup @endlink
+* - @link LCDLib Library Documentation @endlink
+* - Examples
+* 
+* The library should work with the following Hunda tech Touchscreens
+* - H28A-i
+* - H35B-i
+* - H43A-i
+* - H50B-i
+* 
+* altough i could only test it with the H28A-i
+* further more i've included the original docs which were provided by the seller(s) of this products.
+* @}
+* 
+@defgroup setup Setup
+
+ 
+@defgroup LCDLib Library Documentation
+A library for i2c Hunda Tech touchscreens. This library makes it possible to communicate with a Hunda Tech i2c touchscreen display. The library is able to send commands to the touchscreen aswel as recieve messages it sends back. The library is based on the works of hunda tech. But i hope it is a bit more documented and a bit less challenging to use.
+
+The library is split up in two parts:
+- @link send Sending messages @endlink
+- @link return Reading meassages @endlink
+*/

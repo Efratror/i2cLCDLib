@@ -1,0 +1,79 @@
+/**
+@defgroup send Sending messages to the touchscreen
+@ingroup LCDLib
+A send-command is a way of manipulating the touchscreen. This is done by sending a message over i2c. This message starts with a Hex-code of types ::BasicCmd or ::ObjectCmd. Followed by the nessisary parameters.
+
+The commands are divided in to two groups. The first are the @ref basic. These commands manipulate basic concepts of the touchscreen. The second type of commands are the @ref object. 
+These are able to manipulate Controller-object of the touchscreen.
+@{
+	@defgroup basic Basic Commands
+	Functions that preform basic manipulation of the touchscreen, like @link LiquidCrystal::ClrScreen clearing the screen @endlink. @link LiquidCrystal::SetPage Setting @endlink or 
+	@link LiquidCrystal::GetPage getting @endlink the page number, 
+	@link LiquidCrystal::SetBackLight backlight intensity @endlink and place basic objects like @link LiquidCrystal::Line lines @endlink, @link LiquidCrystal::Rectangle rectangles @endlink and @link LiquidCrystal::Display_Image images @endlink.
+	@ingroup send
+
+	@defgroup object Controller-object Commands
+	These functions can manipulate Controller-objects. These objects are defined in de Visual LCD-studio. It is possible to set the values of these controlles. 
+	In some cases it's also possible to send a request to get te current value of a Control-object.
+	@ingroup send
+
+	@defgroup parameters Parameters for the Basic and Controller-object functions
+	@ingroup send
+
+	@defgroup sendHex List of hex Commands
+	@ingroup send
+	Hex commands that can be send to the LCD-screen. These include basic commands as well as Control-object manipulation commands.
+	These Hex-codes are the first byte in a sendcommand message.
+@}
+
+@defgroup return Reading messages from the touchscreen.
+@ingroup LCDLib
+The Hunda tech touchscreen is able to send messages to the controlling device. These messages are generated when a Button-, Checkbox-, Slider- or Edit-control are touched 
+(The @link LiquidCrystal::EnableTouchScreen touch-function @endlink should be enabled). An other case when messages are send is when a "Get Controller Value" Command was send.
+
+When the touchscreen want's to send a message the int-pin will be pulled low. Thus signaling a valid-command or a touch of a controll on the screen.
+
+A typical way to read messages from the touchscreen:
+@code
+#include "LiquidCrystalDisplay.hpp"
+
+LiquidCrystal HundaLcd(13);//Reset pin13
+
+void setup() {
+	attachInterrupt(digitalPinToInterrupt(2), LcdInterrupt, FALLING); //Attach a intterupt to read the message
+}
+
+void loop() {
+	if (HundaLcd.checkNewMessage() == true) {
+		HundaLcd.verboseCommand(HundaLcd.getMessage()); //Output the message to the serial-interface
+	}
+}
+
+//Preform the interrupt
+void LcdInterrupt()
+{
+	HundaLcd.readMessage();
+}
+@endcode
+
+When a button button is touched the output of the serial interface could look like this:
+@code
+Cmd Type     : Button Touched
+Control id   : 17
+Page id      : 3
+Status       : Key released
+Key type     : Change page
+To page      : 4
+@endcode
+
+@{
+	@defgroup returnmsg Format of the returned i2c message.
+	@ingroup return
+	Format of the message returned by the touchscreen, default is _CTRL_MSG.
+
+	@defgroup returnhex Returned Hex Commands
+	@ingroup return
+	Commands that are returnd by the LCD-sceen.
+
+@}
+*/
