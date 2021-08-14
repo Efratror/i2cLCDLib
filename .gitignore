@@ -353,3 +353,4 @@ MigrationBackup/
 doc/html
 *.vcxitems.filters
 *.vcxitems
+Doxyfile - Copy
