@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+
+<svg
+   width="0.477441in"
+   x="0in"
+   version="1.2"
+   y="0in"
+   height="0.369173in"
+   viewBox="0 0 12.127 9.377"
+   id="svg21"
+   sodipodi:docname="pcb(all versions).svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs25" />
+  <sodipodi:namedview
+     id="namedview23"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="in"
+     showgrid="false"
+     inkscape:zoom="15.023767"
+     inkscape:cx="21.931916"
+     inkscape:cy="22.530967"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg21" />
+  <desc
+     id="desc2">
+    <referenceFile>sparkfun-connectors_touch-screen_pcb.svg</referenceFile>
+  </desc>
+  <g
+     gorn="0.1"
+     id="silkscreen">
+    <line
+       class="other"
+       stroke="#f0f0f0"
+       stroke-linecap="round"
+       y1="0.0635"
+       x1="0.0635"
+       y2="0.0635"
+       stroke-width="0.127"
+       x2="12.0635"
+       id="line12" />
+    <line
+       class="other"
+       stroke="#f0f0f0"
+       stroke-linecap="round"
+       y1="0.0635"
+       x1="12.0635"
+       y2="9.3135"
+       stroke-width="0.127"
+       x2="12.0635"
+       id="line14" />
+    <line
+       class="other"
+       stroke="#f0f0f0"
+       stroke-linecap="round"
+       y1="9.3135"
+       x1="12.0635"
+       y2="9.3135"
+       stroke-width="0.127"
+       x2="0.0635"
+       id="line16" />
+    <line
+       class="other"
+       stroke="#f0f0f0"
+       stroke-linecap="round"
+       y1="9.3135"
+       x1="0.0635"
+       y2="0.0635"
+       stroke-width="0.127"
+       x2="0.0635"
+       id="line18" />
+  </g>
+  <g
+     id="g842"
+     transform="translate(9.1224929,-0.03001598)">
+    <g
+       gorn="0.0"
+       id="copper0"
+       transform="translate(-9.1753259,-0.03522198)">
+      <g
+         gorn="0.0.6"
+         id="copper1">
+        <rect
+           width="0.60000002"
+           x="5.0782208"
+           y="-11.636909"
+           fill="#f7bd13"
+           gorn="0.0.2"
+           connectorname="P$3"
+           height="1.9"
+           stroke="none"
+           id="connector2pad"
+           stroke-linecap="round"
+           stroke-width="0"
+           transform="rotate(90)" />
+        <rect
+           width="0.60000002"
+           x="1.3313235"
+           y="-11.636909"
+           fill="#f7bd13"
+           gorn="0.0.2"
+           connectorname="P$3"
+           height="1.9"
+           stroke="none"
+           id="connector5pad"
+           stroke-linecap="round"
+           stroke-width="0"
+           transform="rotate(90)" />
+        <rect
+           width="0.60000002"
+           x="2.5802896"
+           y="-11.636909"
+           fill="#f7bd13"
+           gorn="0.0.2"
+           connectorname="P$3"
+           height="1.9"
+           stroke="none"
+           id="connector4pad"
+           stroke-linecap="round"
+           stroke-width="0"
+           transform="rotate(90)" />
+        <rect
+           width="0.60000002"
+           x="3.8292553"
+           y="-11.636909"
+           fill="#f7bd13"
+           gorn="0.0.3"
+           connectorname="P$4"
+           height="1.9"
+           stroke="none"
+           id="connector3pad"
+           stroke-linecap="round"
+           stroke-width="0"
+           transform="rotate(90)" />
+        <rect
+           width="0.60000002"
+           x="6.3271871"
+           y="-11.636909"
+           fill="#f7bd13"
+           gorn="0.0.1"
+           connectorname="P$2"
+           height="1.9"
+           stroke="none"
+           id="connector1pad"
+           stroke-linecap="round"
+           stroke-width="0"
+           transform="rotate(90)" />
+        <rect
+           width="0.60000002"
+           x="7.5761528"
+           y="-11.636909"
+           fill="#f7bd13"
+           gorn="0.0.0"
+           connectorname="P$1"
+           height="1.9"
+           stroke="none"
+           id="connector0pad"
+           stroke-linecap="round"
+           stroke-width="0"
+           transform="rotate(90)" />
+      </g>
+    </g>
+  </g>
+</svg>
